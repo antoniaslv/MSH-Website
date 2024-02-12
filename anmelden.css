@@ -1,0 +1,109 @@
+body {
+  background-color: rgb(156, 181, 203);
+  font-family: roboto;
+  color: white;
+}
+
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.msh-banner-picture {
+  max-width: 80%;
+  height: 120px;
+}
+
+.login-bord {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 250px;
+  width: 400px;
+  flex-direction: column;
+
+  background-color: rgb(37, 108, 170);
+  margin-top: 50px;
+  border-radius: 20px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.willkommen {
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 35px;
+  margin-bottom: 30px;
+}
+
+.inputs{
+  flex: 1;
+}
+
+.username {
+  margin-bottom: 10px;
+}
+
+.password {
+  margin-bottom: 30px;
+}
+
+.password, .username {
+  width: 230px;
+  padding-left: 10px;
+  font-size: 12px;
+  height: 24px;
+  border-radius: 7px;
+  border: none;
+}
+
+.anmelden-button {
+  width: 130px;
+  margin-bottom: 27px;
+  height: 25px;
+  background-color: rgb(183, 190, 194);
+  border: none;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 7px;
+}
+
+.anmelden-button:hover {
+  cursor: pointer;
+  opacity: 0.75;
+  transition: opacity 0.15s;
+
+}
+
+.anmelden-button:active {
+  background-color: white;
+  background-color: white;
+  border: 0.8px solid gray;
+}
+
+.support-links {
+  margin-bottom: 35px;
+  font-size: 10px;
+}
+
+a:visited {
+  color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+

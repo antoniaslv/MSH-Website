@@ -1,0 +1,52 @@
+.header {
+  background-color: rgb(37, 108, 170);
+  height: 110px;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+img {
+  height: 26px;
+}
+
+/*button größe mit Bild anpassen*/
+.msh-logo-button {
+  border: none;
+
+}
+
+.msh-logo {
+  height:74px;
+}
+
+.left-section {
+  display: flex;
+  margin-left: 30px;
+}
+
+.middle-section {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  flex-wrap: wrap;
+
+  max-width: 600px ;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.right-section {
+  display: flex;
+  margin-right: 30px;
+}
+
+.news-button, .private-button, .cafe-button, .learning-button {
+  width: 120px;
+  height: 40px;
+  font-size: 14px;
+
+}
+

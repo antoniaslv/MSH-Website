@@ -5,7 +5,7 @@ body {
 
 .header {
   background-color: rgb(37, 108, 170);
-  height: 80px;
+  height: 70px;
 
   display: flex;
   flex-direction: row;
@@ -25,7 +25,7 @@ img {
 .news-button, .private-button, .cafe-button, .learning-button, .logout-button, .hamburger-icon-button {
   width: 35px;
   height: 35px;
-  background-color: rgba(37, 108, 170, 0.32);
+  background-color: rgba(195, 204, 220, 0.8) ;
   border: 0.9px solid rgb(28, 36, 67);
   border-radius: 6px;
   padding-top: 4px ;
@@ -59,6 +59,11 @@ img {
   border: 0.9px solid rgb(28, 36, 67);
   padding-top: 4px ;
   border-radius: 2px;
+  background-color: rgba(195, 204, 220, 0.8);
+}
+
+.search-button:active {
+  background-color: rgba(195, 204, 220, 0.8) ;
 }
 
 .search-bar {
@@ -67,7 +72,7 @@ img {
   padding-left: 10px;
   border: 0.9px solid rgb(28, 36, 67) ;
   border-radius: 2px;
-  box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.15);
 }
 
 .search-bar::placeholder {
@@ -87,6 +92,12 @@ img {
 
 button:hover {
   cursor: pointer;
+  opacity: 0.70;
+  transition: opacity 0.15s;
+}
+
+button:active {
+  background-color: rgb(37, 108, 170) ;
 }
 
 

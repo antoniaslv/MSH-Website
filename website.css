@@ -31,6 +31,14 @@ img {
   padding-top: 4px ;
 }
 
+.logout-button:hover {
+  background-color:rgba(250, 41, 41, 0.8) ;
+}
+
+.logout-button:active {
+  background-color: rgb(37, 108, 170) ;
+}
+
 .hamburger-icon-button {
   margin-right: 15px;
 }
@@ -99,5 +107,32 @@ button:hover {
 button:active {
   background-color: rgb(37, 108, 170) ;
 }
+
+.body {
+  display: flex;
+  margin-left: 20px;
+  margin-right: 30px;
+  margin-top: 20px;
+}
+
+.info-input-complete {
+  display: grid;
+  grid-template-columns: 170px 1fr ;
+  column-gap: 16px;
+  row-gap: 40px;
+}
+
+.info-input-middle-div, .info-input-left-div {
+  border: 0.8px solid rgb(28, 36, 67);
+  padding: 10px 10px 10px 10px ;
+}
+
+#info-input-middle-div-1, #info-input-left-div-1 {
+  margin-bottom: 15px;
+}
+
+
+
+
 
 

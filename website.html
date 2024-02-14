@@ -15,13 +15,15 @@
     <div class="header">
 
       <div class="left-section">
+ <!-- mit JS Menü zur Seite Öffnen-->
         <button class="hamburger-icon-button">
           <img class="hamburger-icon" src="Pictures/hamburger-menu Kopie.svg" alt="hamburger-icon">
         </button>
         <a class="msh-logo-links" href="website.html"><img class="msh-logo" src="Pictures/msh-logo.gif" alt="MSH-Logo"></a>
       </div>
-
       <div class="middle-section">
+<!-- mit JS Menü button drop down bei search bar 
+   siehe originale MSH Seite direkt Sprung-->
         <input class="search-bar" type="text" placeholder="Search">
 
         <button class="search-button">
@@ -31,33 +33,34 @@
       </div>
 
       <div class="right-section">
+<!-- mit JS Menü button drop down -->
 
-        <div class="news">
+        <div id="news" class="news">
           <button class="news-button">
             <img class="news-icon" src="Pictures/News_Icon.png" alt="News-Icon">
           </button> 
         </div>
 
 
-        <div class="cafe">
+        <div id="cafe" class="cafe">
           <button class="cafe-button">
             <img class="cafe-icon" src="Pictures/Cafe_Icon.png" alt="Cafè-Icon">
           </button>
         </div>
 
-        <div class="learning">
+        <div id="learning" class="learning">
           <button class="learning-button">
             <img class="learning-icon" src="Pictures/Learning_Icon.png" alt="Lernen-Icon">
           </button>
         </div>
 
-        <div class="private">
+        <div id="private" class="private">
           <button class="private-button">
             <img class="private-icon" src="Pictures/Private_Icon.png" alt="Privat-Icon">
           </button>
         </div>
 
-        <div class="logout">
+        <div id="logout" class="logout">
           <button class="logout-button">
             <img class="logout-icon" src="Pictures/Logout_Icon.png" alt="Logout-Icon">
           </button>
@@ -69,8 +72,88 @@
 
   <div class="body">
 
+    <div class="info-input-complete">
+
+      <div class="info-input-left">
+
+        <div class="vertical-div">
+
+          <div id="info-input-left-div-1" class="info-input-left-div">
+
+            <div class="info-left-header">
+              <!-- mit JS Nutzer Zahl-->
+              Gerade Online
+            </div>
+
+            <div class="info-left-input">
+              Nutzer
+            </div>
+          </div>
+
+          <div id="info-input-left-div-2" class="info-input-left-div">
+
+            <div class="info-left-header">
+              <!-- mit JS Termine-->
+              Termine
+            </div>
+
+            <div class="info-left-input">
+              -heute keine Termine-
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="info-input-middle">
+
+        <div id="info-input-middle-div-1" class="info-input-middle-div">
+          <div class="info-input-header">
+            <span class="info-header">Online-Schulung für ClinicalKey zum Tag der seltenen Krankheiten</span>
+          </div>
+          <div class="info-input-body">
+            <span class="info-input-anrede">Liebe Studierende und Dozierende,</span>
+
+            <p class="info-input-p1">am 28.02.2024 um 14:00 Uhr wird anlässlich des Tags der seltenen Krankheiten eine 
+              Online-Schulung zur medizinisch-klinischen Suchmaschine ClinicalKey (Elsevier) angeboten.
+              Das Online-Seminar ist kostenlos und wird voraussichtlich 45 Minuten dauern. Über den beigefügten 
+              Link gelangen Sie zur Registrierung.
+            </p>
+
+            <p class="info-input-p2">Herzliche Grüße vom Team der Bibliothek</p>
+            Drück auf den
+            <a href="Link: https://campaigns.elsevier.com/mkt/forms/ck-webinar-28-02?languagecode=de-de">
+              Link
+            </a>
+            
+          </div>
+        </div>
+
+        <div id="info-input-middle-div-2" class="info-input-middle-div">
+          <div class="info-input-header">
+            <span class="info-header">Werkstudenten im Praxismanagement/ Ausbildungsservice gesucht</span>
+          </div>
+
+          <div class="info-input-body">
+            <span class="info-input-anrede">Liebe Studierende,</span>
+
+            <p class="info-input-p1">
+              gerne möchte ich Sie auf eine Stellenanzeige für Werkstudent:innen im 
+              Praxismanagement/Ausbildungsservice am HIP Hafencity Institut für Psychotherapie aufmerksam machen. 
+              Wir sind auf der Suche nach Studierenden, die in zwei verschiedenen Bereichen unterstützen:
+            </p>
+
+            <p class="info-input-p2">
+              1&#041 Unterstützung im Praxismanagement/Ausbildungsservice &#040werktags in dem möglichen Zeitraum 
+              von 08:00 bis 20:00 Uhr, insbesondere in der Randzeit von 16:00 bis 20:00 Uhr am Standort 
+              Hamburg-Harburg&#041 <!--mehr mit JS-->mehr
+            </p>
+
+          </div>
+
+        </div>
+      </div>
   </div>
-  
-  
+  </div>
 </body>
 </html>

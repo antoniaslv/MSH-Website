@@ -117,7 +117,7 @@ button:active {
 
 .info-input-complete {
   display: grid;
-  grid-template-columns: 170px 1fr ;
+  grid-template-columns: 170px 1fr 170px;
   column-gap: 16px;
   row-gap: 40px;
 }
@@ -125,14 +125,25 @@ button:active {
 .info-input-middle-div, .info-input-left-div {
   border: 0.8px solid rgb(28, 36, 67);
   padding: 10px 10px 10px 10px ;
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.15);
+  border-radius: 2px;
+  background-image: linear-gradient(to top, white 50%, rgba(45, 61, 124, 0.15) )
 }
 
 #info-input-middle-div-1, #info-input-left-div-1 {
   margin-bottom: 15px;
 }
 
+.info-input-header {
+  margin-bottom: 4px;
+  border-bottom: 0.8px solid rgb(28, 36, 67);
+  padding-bottom: 6px;
+}
 
+.info-input-body {
+  padding-top: 6px;
+}
 
-
-
-
+.input-title {
+  font-weight: 540;
+}

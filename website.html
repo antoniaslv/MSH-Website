@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="textJS" src="website.js"></script>
   </head>
 
 <body>
@@ -19,9 +20,11 @@
         <button class="hamburger-icon-button">
           <img class="hamburger-icon" src="Pictures/hamburger-menu Kopie.svg" alt="hamburger-icon">
         </button>
-        <a class="msh-logo-links" href="website.html"><img class="msh-logo" src="Pictures/msh-logo.gif" alt="MSH-Logo"></a>
+        <a class="msh-logo-links" href="website.html"><img class="msh-logo" src="Pictures/msh-logo-new.jpeg" alt="MSH-Logo"></a>
       </div>
       <div class="middle-section">
+
+
 <!-- mit JS Menü button drop down bei search bar 
    siehe originale MSH Seite direkt Sprung-->
         <input class="search-bar" type="text" placeholder="Search">
@@ -33,31 +36,51 @@
       </div>
 
       <div class="right-section">
-<!-- mit JS Menü button drop down -->
 
-        <div id="news" class="news">
+        <div id="news" class="menu-item">
           <button class="news-button">
             <img class="news-icon" src="Pictures/News_Icon.png" alt="News-Icon">
           </button> 
+          <div class="dropdown-content">
+            <a href="#">News Option 1</a>
+            <a href="#">News Option 2</a>
+            <a href="#">News Option 3</a>
+          </div>
         </div>
 
 
-        <div id="cafe" class="cafe">
+        <div id="cafe" class="menu-item">
           <button class="cafe-button">
             <img class="cafe-icon" src="Pictures/Cafe_Icon.png" alt="Cafè-Icon">
           </button>
+          <div class="dropdown-content">
+            <a href="#">Cafè Option 1</a>
+            <a href="#">Cafè Option 2</a>
+            <a href="#">Cafè Option 3</a>
+          </div>
+
         </div>
 
-        <div id="learning" class="learning">
+        <div id="learning" class="menu-item">
           <button class="learning-button">
             <img class="learning-icon" src="Pictures/Learning_Icon.png" alt="Lernen-Icon">
           </button>
+          <div class="dropdown-content">
+            <a href="#">Learning Option 1</a>
+            <a href="#">Learning Option 2</a>
+            <a href="#">Learning Option 3</a>
+          </div>
         </div>
 
-        <div id="private" class="private">
-          <button class="private-button">
+        <div id="private" class="menu-item">
+          <button class="private-button" id="privateButton">
             <img class="private-icon" src="Pictures/Private_Icon.png" alt="Privat-Icon">
           </button>
+          <div class="dropdown-content" id="privateDropdown">
+            <a href="#">Private Option 1</a>
+            <a href="#">Private Option 2</a>
+            <a href="#">Private Option 3</a>
+          </div>
         </div>
 
         <div id="logout" class="logout">
@@ -75,36 +98,39 @@
     <div class="info-input-complete">
 
       <!--linke Seite Web-Page-->
+      
       <div class="info-input-left">
-
+<!--
         <div class="vertical-div">
 
           <div id="info-input-left-div-1" class="info-input-left-div">
 
-            <div class="info-input-header">
-              <!-- mit JS Nutzer Zahl-->
+            <div id="info-input-header-left-1" class="info-input-header">
+               mit JS Nutzer Zahl
               <span class="input-title">Gerade Online</span> 
             </div>
 
-            <div class="info-input-body">
+            <div id="info-input-body-left-1" class="info-input-body">
               Nutzer
             </div>
           </div>
 
           <div id="info-input-left-div-2" class="info-input-left-div">
 
-            <div class="info-input-header">
-              <!-- mit JS Termine-->
+            <div id="info-input-header-left-2" class="info-input-header">
+              - mit JS Termine-
               <span class="input-title">Termine</span>
             </div>
 
-            <div class="info-input-body">
+            <div id="info-input-body-left-2" class="info-input-body">
               -heute keine Termine-
             </div>
           </div>
 
         </div>
+        -->
       </div>
+    
 
       <!--mittlerer Teil Web-Page-->
 
@@ -162,13 +188,52 @@
       <!--rechte Seite Web-Page-->
       <div class="info-input-middle">
         <div class="latest-changes">
-          <div class="latest-changes-header"></div>
-          <div class="latest latest-changes-body"></div>
+          <div class="latest-changes-header">
+            <span class="input-title">Heutige Aufgaben </span>
+          </div>
+          <div class="latest latest-changes-body">
+            <input id="task-input" class="task-input-1" type="text"> 
+              <input id="checkbox" class="checkbox-1" type="checkbox">
+<!--als add new machen
+            <input id="task-input" class="task-input-2" type="text"> 
+              <input id="checkbox" class="checkbox-2" type="checkbox">
+
+            <input id="task-input" class="task-input-3" type="text"> 
+              <input id="checkbox" class="checkbox-3" type="checkbox">
+
+            <input id="task-input" class="task-input-4" type="text"> 
+              <input id="checkbox" class="checkbox-4" type="checkbox">
+
+            <input id="task-input" class="task-input-5" type="text"> 
+              <input id="checkbox" class="checkbox-5" type="checkbox">
+
+            <input id="task-input" class="task-input-6" type="text"> 
+              <input id="checkbox" class="checkbox-6" type="checkbox">
+
+            <input id="task-input" class="task-input-7" type="text"> 
+              <input id="checkbox" class="checkbox-7" type="checkbox">
+                      -->
+          </div>
+   
         </div>
+       
+
+          <div class="latest-changes">
+            <div class="latest-changes-header">
+              <span class="input-title">Kommende Aufgaben</span>
+            </div>
+            <div class="latest-changes-body">
+              <input type="text">
+            </div>
+          </div>
+
       </div>
 
       
   </div>
   </div>
 </body>
+<footer>
+  <!--by antonia.slv-->
+</footer>
 </html>

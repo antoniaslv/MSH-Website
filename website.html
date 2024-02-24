@@ -8,7 +8,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script type="textJS" src="website.js"></script>
   </head>
 
 <body>
@@ -16,10 +15,21 @@
     <div class="header">
 
       <div class="left-section">
- <!-- mit JS Menü zur Seite Öffnen-->
-        <button class="hamburger-icon-button">
+        <button class="hamburger-icon-button" onclick="toggleSidePanel()">
           <img class="hamburger-icon" src="Pictures/hamburger-menu Kopie.svg" alt="hamburger-icon">
         </button>
+        
+        <div id="sidePanel" class="side-panel">
+          <button class="close-btn" onclick="closeSidePanel()">Close</button>
+          <!-- Inhalt des Side Panels -->
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+
+
+
+
         <a class="msh-logo-links" href="website.html"><img class="msh-logo" src="Pictures/msh-logo-new.jpeg" alt="MSH-Logo"></a>
       </div>
       <div class="middle-section">
@@ -42,9 +52,9 @@
             <img class="news-icon" src="Pictures/News_Icon.png" alt="News-Icon">
           </button> 
           <div class="dropdown-content">
-            <a href="#">News Option 1</a>
-            <a href="#">News Option 2</a>
-            <a href="#">News Option 3</a>
+            <a href="#">Kalender</a>
+            <a href="#">Karriere</a>
+            <a href="#">News</a>
           </div>
         </div>
 
@@ -54,9 +64,12 @@
             <img class="cafe-icon" src="Pictures/Cafe_Icon.png" alt="Cafè-Icon">
           </button>
           <div class="dropdown-content">
-            <a href="#">Cafè Option 1</a>
-            <a href="#">Cafè Option 2</a>
-            <a href="#">Cafè Option 3</a>
+            <a href="#">Kollegen</a>
+            <a href="#">Dozierende</a>
+            <a href="#">Nutzergruppen</a>
+            <a href="#">Emails</a>
+            <a href="#">Foren</a>
+            <a href="#">Chat</a>
           </div>
 
         </div>
@@ -66,9 +79,13 @@
             <img class="learning-icon" src="Pictures/Learning_Icon.png" alt="Lernen-Icon">
           </button>
           <div class="dropdown-content">
-            <a href="#">Learning Option 1</a>
-            <a href="#">Learning Option 2</a>
-            <a href="#">Learning Option 3</a>
+            <a href="#">Lernthemen Übersicht</a>
+            <a href="#">Studienplan</a>
+            <a href="#">Archiv</a>
+            <a href="#">Bibliothek</a>
+            <a href="#">Ressourcen</a>
+            <a href="#">E-Learning</a>
+            <a href="#">Laufwerk</a>
           </div>
         </div>
 
@@ -77,9 +94,13 @@
             <img class="private-icon" src="Pictures/Private_Icon.png" alt="Privat-Icon">
           </button>
           <div class="dropdown-content" id="privateDropdown">
-            <a href="#">Private Option 1</a>
-            <a href="#">Private Option 2</a>
-            <a href="#">Private Option 3</a>
+            <a href="#">Persönliche Daten</a>
+            <a href="#">Passwort</a>
+            <a href="#">Anwesenheit</a>
+            <a href="#">Noten</a>
+            <a href="#">Heutige Aufgaben</a>
+            <a href="#">Zukünftige Aufgaben</a>
+            <a href="#">Anträge</a>
           </div>
         </div>
 
@@ -232,6 +253,8 @@
       
   </div>
   </div>
+
+  <script defer src="website.js"></script>
 </body>
 <footer>
   <!--by antonia.slv-->

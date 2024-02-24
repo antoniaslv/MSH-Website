@@ -1,4 +1,5 @@
 
+/* dropdown buttons*/
 window.onclick = function(event) {
   if (!event.target.matches('#privateButton')) {
     var dropdowns = document.getElementsByClassName("dropdown-content");
@@ -11,3 +12,13 @@ window.onclick = function(event) {
   }
 }
 
+/*side Pannel */
+function toggleSidePanel() {
+  var sidePanel = document.getElementById('sidePanel');
+  sidePanel.style.width = (sidePanel.style.width === '250px') ? '0' : '250px';
+}
+
+function closeSidePanel() {
+  var sidePanel = document.getElementById('sidePanel');
+  sidePanel.style.width = '0';
+}

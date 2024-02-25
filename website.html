@@ -22,13 +22,29 @@
         <div id="sidePanel" class="side-panel">
           <button class="close-btn" onclick="closeSidePanel()">Close</button>
           <!-- Inhalt des Side Panels -->
-          <a href="#">Link 1</a>
-          <a href="#">Link 2</a>
-          <a href="#">Link 3</a>
+          <div class="inhalt-side-panel">
+            <div class="side-panel-link">
+              <a href="#">Link 1</a>
+            </div>
+  
+            <div class="side-panel-link">
+              <a href="#">Link 1</a>
+            </div>
+  
+            <div class="side-panel-link">
+              <a href="#">Link 1</a>
+            </div>
+  
+            <div class="side-panel-link">
+              <a href="#">Link 1</a>
+            </div>
+  
+            <div class="side-panel-link">
+              <a href="#">Link 1</a>
+            </div>
+          </div>
         </div>
-
-
-
+         
 
         <a class="msh-logo-links" href="website.html"><img class="msh-logo" src="Pictures/msh-logo-new.jpeg" alt="MSH-Logo"></a>
       </div>
@@ -207,14 +223,16 @@
       </div>
 
       <!--rechte Seite Web-Page-->
-      <div class="info-input-middle">
-        <div class="latest-changes">
-          <div class="latest-changes-header">
+      <div class="info-input-right">
+        <div id="heutigeAufgaben" class="info-input-right-div">
+          <div class="info-input-header-right">
             <span class="input-title">Heutige Aufgaben </span>
           </div>
-          <div class="latest latest-changes-body">
+
+          <div class="info-input-body-right">
             <input id="task-input" class="task-input-1" type="text"> 
               <input id="checkbox" class="checkbox-1" type="checkbox">
+
 <!--als add new machen
             <input id="task-input" class="task-input-2" type="text"> 
               <input id="checkbox" class="checkbox-2" type="checkbox">
@@ -235,22 +253,18 @@
               <input id="checkbox" class="checkbox-7" type="checkbox">
                       -->
           </div>
-   
         </div>
        
 
-          <div class="latest-changes">
-            <div class="latest-changes-header">
-              <span class="input-title">Kommende Aufgaben</span>
-            </div>
-            <div class="latest-changes-body">
-              <input type="text">
-            </div>
+        <div id="zukünftigeAufgaben" class="info-input-right-div">
+          <div class="info-input-header-right">
+            <span class="input-title">Kommende Aufgaben</span>
           </div>
-
-      </div>
-
-      
+          <div class="info-input-body-right">
+            <input type="text">
+          </div>
+        </div>
+      </div>     
   </div>
   </div>
 

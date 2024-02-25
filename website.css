@@ -121,10 +121,13 @@ button:active {
   display: grid;
   grid-template-columns: 1px 1fr 300px;
   column-gap: 16px;
-  row-gap: 40px;
 }
 
-.info-input-middle-div, .info-input-left-div, .latest-changes {
+.info-input-middle {
+  min-width: 450px;
+}
+
+.info-input-middle-div, .info-input-left-div, .info-input-right-div {
   border: 0.8px solid rgb(28, 36, 67);
   padding: 10px 10px 10px 10px ;
   box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.15);
@@ -167,6 +170,12 @@ button:active {
   font-weight: 540;
 }
 
+/*rechte Seite body*/
+
+.info-input-right-div, .info-input-header-right {
+  margin-bottom: 14px;
+}
+
 /*dropdown buttons*/
 .menu-item {
   position: relative;
@@ -176,10 +185,11 @@ button:active {
   display: none;
   margin-top: 1px;
   position: absolute;
-  background-color: rgb(224, 230, 239);
+  background-color: rgb(232, 236, 244);
   border-radius: 7px;
   box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.15);
   z-index: 1;
+  border: 0.5px solid rgb(172, 177, 184);
 }
 
 .dropdown-content a {
@@ -212,36 +222,63 @@ button:active {
   overflow-x: hidden;
   transition: width 0.5s;
   padding-top: 60px;
+  border-right: 0.5px solid rgb(168, 167, 167);
+  border-radius: 10px;
 }
 
 .side-panel a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
-  font-size: 25px;
-  color: #818181;
+  font-size: 16px;
+  color: #3c4555;
   display: block;
   transition: 0.3s;
 }
 
-.side-panel a:hover {
-  color: #f1f1f1;
+.side-panel-link:hover {
+  background-color: rgba(45, 61, 124, 0.15);
+  border-radius: 7px;
 }
 
-.side-panel .close-btn {
+.inhalt-side-panel {
+  width: 90%;
+  margin-left: 12px;
+}
+
+.close-btn {
   position: absolute;
   top: 8px;
   right: 16px;
-  font-size: 20px;
-  background-color: #4CAF50;
-  color: white;
+  font-size: 15px;
+  background-color: white;
+  border-radius: 7px;
+  color: black;
   border: none;
-  padding: 8px 16px;
+  padding: 4px 10px;
   cursor: pointer;
 }
 
+.close-btn:hover {
+  background-color: rgba(195, 204, 220, 0.8);
+}
+
+.close-btn:active {
+  background-color: rgba(195, 204, 220, 0.8);
+  color: rgb(107, 105, 105);
+}
 
 @media only screen and (max-width: 650px) {
-  .menu-item .private-button {
+  .menu-item .private-button, .info-input-right {
     display: none; 
   }
+}
+
+@media only screen and (max-width: 650px) {
+  .info-input-middle {
+    width: 450px; 
+  }
+}
+
+body {
+  margin-bottom: 1000px;
 }

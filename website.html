@@ -24,33 +24,29 @@
           <!-- Inhalt des Side Panels -->
           <div class="inhalt-side-panel">
             <div class="side-panel-link">
-              <a href="#">Link 1</a>
+              <a href="#">News</a>
             </div>
   
             <div class="side-panel-link">
-              <a href="#">Link 1</a>
+              <a href="#">Café</a>
             </div>
   
             <div class="side-panel-link">
-              <a href="#">Link 1</a>
+              <a href="#">Learning</a>
             </div>
   
             <div class="side-panel-link">
-              <a href="#">Link 1</a>
+              <a href="#">Privat</a>
             </div>
-  
-            <div class="side-panel-link">
-              <a href="#">Link 1</a>
-            </div>
+
           </div>
         </div>
          
 
         <a class="msh-logo-links" href="website.html"><img class="msh-logo" src="Pictures/msh-logo-new.jpeg" alt="MSH-Logo"></a>
       </div>
+
       <div class="middle-section">
-
-
 <!-- mit JS Menü button drop down bei search bar 
    siehe originale MSH Seite direkt Sprung-->
         <input class="search-bar" type="text" placeholder="Search">
@@ -58,7 +54,6 @@
         <button class="search-button">
           <img class="search-button-icon" src="Pictures/search.svg" alt="search-button">
         </button>
-
       </div>
 
       <div class="right-section">
@@ -82,12 +77,11 @@
           <div class="dropdown-content">
             <a href="#">Kollegen</a>
             <a href="#">Dozierende</a>
-            <a href="#">Nutzergruppen</a>
+            <a href="#">Gruppen</a>
             <a href="#">Emails</a>
             <a href="#">Foren</a>
             <a href="#">Chat</a>
           </div>
-
         </div>
 
         <div id="learning" class="menu-item">
@@ -125,53 +119,27 @@
             <img class="logout-icon" src="Pictures/Logout_Icon.png" alt="Logout-Icon">
           </button>
         </div>
-
       </div>
     </div>
   </header>
 
   <div class="body">
-
-    <div class="info-input-complete">
-
-      <!--linke Seite Web-Page-->
-      
-      <div class="info-input-left">
-<!--
-        <div class="vertical-div">
-
-          <div id="info-input-left-div-1" class="info-input-left-div">
-
-            <div id="info-input-header-left-1" class="info-input-header">
-               mit JS Nutzer Zahl
-              <span class="input-title">Gerade Online</span> 
-            </div>
-
-            <div id="info-input-body-left-1" class="info-input-body">
-              Nutzer
-            </div>
-          </div>
-
-          <div id="info-input-left-div-2" class="info-input-left-div">
-
-            <div id="info-input-header-left-2" class="info-input-header">
-              - mit JS Termine-
-              <span class="input-title">Termine</span>
-            </div>
-
-            <div id="info-input-body-left-2" class="info-input-body">
-              -heute keine Termine-
-            </div>
-          </div>
-
-        </div>
-        -->
-      </div>
     
+        <div class="info-input-complete">
 
+          <div class="info-input-left" >
+          </div>
+ 
+    
       <!--mittlerer Teil Web-Page-->
 
+
       <div class="info-input-middle">
+
+        <div id="mshPictureDiv" class="info-input-middle-picture">
+          <img id="mshPicture" src="Pictures/MSH-Kaiserkai-1-bild-1.pdf" alt="msh">
+        </div>
+  
 
         <div id="info-input-middle-div-1" class="info-input-middle-div">
           <div class="info-input-header">
@@ -224,6 +192,18 @@
 
       <!--rechte Seite Web-Page-->
       <div class="info-input-right">
+
+        <div class="calendar-container">
+          <div class="header">
+              <button id="prevMonth">Previous</button>
+              <h2 id="currentMonth"></h2>
+              <button id="nextMonth">Next</button>
+          </div>
+          <div id="calendar"></div>
+      </div>
+
+      
+
         <div id="heutigeAufgaben" class="info-input-right-div">
           <div class="info-input-header-right">
             <span class="input-title">Heutige Aufgaben </span>
@@ -233,7 +213,7 @@
             <input id="task-input" class="task-input-1" type="text"> 
               <input id="checkbox" class="checkbox-1" type="checkbox">
 
-<!--als add new machen
+            <!--als add new machen
             <input id="task-input" class="task-input-2" type="text"> 
               <input id="checkbox" class="checkbox-2" type="checkbox">
 
